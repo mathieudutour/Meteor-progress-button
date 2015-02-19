@@ -1,0 +1,106 @@
+.pb-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.pb-container > .pb-button {
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 0;
+  color: currentColor;
+  cursor: pointer;
+  padding: 0.7em 1em;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s, border-radius 0.3s;
+  transition:         background-color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s, border-radius 0.3s;
+}
+
+.pb-container > .pb-button:hover {
+  background: currentColor;
+  color: #FFF;
+}
+
+.pb-container > .pb-button > span {
+  display: inherit;
+  -webkit-transition: opacity 0.3s 0.1s;
+  transition:         opacity 0.3s 0.1s;
+}
+
+.pb-container > .pb-button > svg {
+  height: 54px;
+  width: 54px;
+  position: absolute;
+  -webkit-transform:  translate(-50%, -50%);
+  transform:          translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.pb-container > .pb-button > svg > path {
+  opacity: 0;
+  fill: none;
+}
+
+.pb-container > .pb-button > .pb-progress-circle > path {
+  stroke: currentColor;
+  stroke-width: 5;
+  -webkit-animation:  spin 0.9s infinite linear;
+  animation:          spin 0.9s infinite linear;
+}
+
+.pb-container > .pb-button > .pb-checkmark > path, .pb-container > .pb-button > .pb-cross > path {
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.pb-container.loading > .pb-button {
+  width: 54px;
+  height: 54px;
+  /* make a circle */
+  border-radius: 50%;
+  border-width: 6.5px;
+  border-color: #ddd;
+  background-color: transparent;
+  padding: 0;
+}
+
+.pb-container.loading > .pb-button > span, .pb-container.success > .pb-button > span, .pb-container.error > .pb-button > span {
+  -webkit-transition: all 0.15s;
+  transition:         all 0.15s;
+  opacity: 0;
+  display: none;
+}
+
+.pb-container.loading > .pb-button > .pb-progress-circle > path {
+  opacity: 1;
+}
+
+.pb-container.success > .pb-button {
+  border-color: #A0D468;
+  background-color: #A0D468;
+}
+
+.pb-container.success > .pb-button > .pb-checkmark > path {
+  opacity: 1;
+}
+
+.pb-container.error > .pb-button {
+  border-color: #ED5565;
+  background-color: #ED5565;
+}
+
+.pb-container.error > .pb-button > .pb-cross > path {
+  opacity: 1;
+}
+
+@-webkit-keyframes spin {
+  from {-webkit-transform: rotate(0deg);-webkit-transform-origin: top left;}
+  to {-webkit-transform: rotate(360deg);-webkit-transform-origin: top left;}
+}
+@keyframes spin {
+  from {transform: rotate(0deg);transform-origin: top left;}
+  to {transform: rotate(360deg);transform-origin: top left;}
+}
