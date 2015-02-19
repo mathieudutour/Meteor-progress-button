@@ -13,6 +13,7 @@
   padding: 0.7em 1em;
   text-decoration: none;
   text-align: center;
+  height: 54px;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s, border-radius 0.3s;
@@ -81,7 +82,6 @@
 
 .pb-container.loading > .pb-button {
   width: 54px;
-  height: 54px;
   /* make a circle */
   border-radius: 50%;
   border-width: 6.5px;
