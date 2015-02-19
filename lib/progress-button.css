@@ -1,6 +1,7 @@
 .pb-container {
   display: inline-block;
   text-align: center;
+  width: 100%;
 }
 
 .pb-container > .pb-button {
@@ -20,13 +21,16 @@
 
 .pb-container > .pb-button:hover {
   background: currentColor;
-  color: #FFF;
 }
 
 .pb-container > .pb-button > span {
   display: inherit;
   -webkit-transition: opacity 0.3s 0.1s;
   transition:         opacity 0.3s 0.1s;
+}
+
+.pb-container > .pb-button:hover > span {
+  color: #FFF;
 }
 
 .pb-container > .pb-button > svg {
