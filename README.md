@@ -9,9 +9,9 @@ Usage
 =====
 
 
-	{{#progress-button class="myClass" id="myId" type="submit"}}
+	{{#progress_button class="myClass" id="myId" type="submit"}}
 		Login
-	{{/progress-button}}
+	{{/progress_button}}
 
 	// to animate the button add the corresponding class
 
