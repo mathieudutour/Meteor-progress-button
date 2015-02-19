@@ -33,6 +33,25 @@
   color: #FFF;
 }
 
+.pb-container > .pb-button.inverted {
+  background: currentColor;
+  border: 2px solid currentColor;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.pb-container > .pb-button.inverted:hover {
+  background: currentColor;
+}
+
+.pb-container > .pb-button.inverted > span {
+  color: #FFF;
+}
+
+.pb-container > .pb-button.inverted:hover > span {
+  color: #FFF;
+}
+
 .pb-container > .pb-button > svg {
   height: 54px;
   width: 54px;
