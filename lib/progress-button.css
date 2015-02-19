@@ -37,8 +37,6 @@
 .pb-container > .pb-button.inverted {
   background: currentColor;
   border: 2px solid currentColor;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .pb-container > .pb-button.inverted:hover {
