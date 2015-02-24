@@ -78,7 +78,7 @@
   stroke-width: 4;
 }
 
-.pb-container.loading > .pb-button {
+.pb-container.pb-loading > .pb-button {
   width: 54px;
   /* make a circle */
   border-radius: 50%;
@@ -88,32 +88,32 @@
   padding: 0;
 }
 
-.pb-container.loading > .pb-button > span, .pb-container.success > .pb-button > span, .pb-container.error > .pb-button > span {
+.pb-container.pb-loading > .pb-button > span, .pb-container.pb-success > .pb-button > span, .pb-container.pb-error > .pb-button > span {
   -webkit-transition: all 0.15s;
   transition:         all 0.15s;
   opacity: 0;
   display: none;
 }
 
-.pb-container.loading > .pb-button > .pb-progress-circle > path {
+.pb-container.pb-loading > .pb-button > .pb-progress-circle > path {
   opacity: 1;
 }
 
-.pb-container.success > .pb-button {
+.pb-container.pb-success > .pb-button {
   border-color: #A0D468;
   background-color: #A0D468;
 }
 
-.pb-container.success > .pb-button > .pb-checkmark > path {
+.pb-container.pb-success > .pb-button > .pb-checkmark > path {
   opacity: 1;
 }
 
-.pb-container.error > .pb-button {
+.pb-container.pb-error > .pb-button {
   border-color: #ED5565;
   background-color: #ED5565;
 }
 
-.pb-container.error > .pb-button > .pb-cross > path {
+.pb-container.pb-error > .pb-button > .pb-cross > path {
   opacity: 1;
 }
 

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'matdutour:progress-button',
-  version: '0.1.7',
+  version: '0.1.8',
   summary: 'Easy to use helper to display a nifty progress button',
   git: 'https://github.com/mathieudutour/Meteor-progress-button.git',
   documentation: 'README.md'
@@ -12,4 +12,6 @@ Package.onUse(function(api) {
   api.use('templating');
   api.addFiles('lib/progress-button.html', 'client');
   api.addFiles('lib/progress-button.css', 'client');
+  api.export('ProgressButton', 'client');
+  api.addFiles('lib/progress-button.js', 'client');
 });
