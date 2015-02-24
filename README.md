@@ -15,21 +15,19 @@ Usage
 
 	// to animate the button add the corresponding class
 
-	$("#myId").addClass("loading");
-	$("#myId").addClass("error");
-    $("#myId").addClass("success");
+    var button = new ProgressButton("myId", {duration : 1200});
+	button.loading();
+	button.error();
+    button.success();
     
     // for example :
     
-    $("#myId").addClass("loading");
+    var button = new ProgressButton("myId");
     Meteor.loginWithPassword(email, password, function (err) {
-      $("#myId").removeClass("loading");
       if (err) {
         console.log(err);
-        $("#myId").addClass('error');
-        Meteor.setTimeout(function () { $("#myId").removeClass('error'); }, 1200 );
+        button.error();
       } else {
-        $("#myId").addClass('success');
-        Meteor.setTimeout(function () { $("#myId").removeClass('success'); }, 1200 );
+        button.success();
       }
     });

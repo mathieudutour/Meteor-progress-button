@@ -1,6 +1,6 @@
 Package.describe({
   name: 'matdutour:progress-button',
-  version: '0.1.8',
+  version: '0.1.9',
   summary: 'Easy to use helper to display a nifty progress button',
   git: 'https://github.com/mathieudutour/Meteor-progress-button.git',
   documentation: 'README.md'
