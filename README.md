@@ -17,6 +17,7 @@ Usage
 
     var button = new ProgressButton("myId", {duration : 1200});
 	button.loading();
+    button.notLoading();
 	button.error();
     button.success();
     
