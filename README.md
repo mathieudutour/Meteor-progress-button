@@ -18,8 +18,8 @@ Usage
     var button = new ProgressButton("myId", {duration : 1200});
 	button.loading();
     button.notLoading();
-	button.error();
-    button.success();
+	button.error(function(){});
+    button.success(true, function(){});
     
     // for example :
     
