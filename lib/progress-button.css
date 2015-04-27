@@ -95,7 +95,7 @@
   display: none;
 }
 
-.pb-container.pb-loading > .pb-button > .pb-progress-circle > path {
+.pb-container.pb-success > .pb-button > .pb-progress-circle > path {
   opacity: 1;
 }
 
